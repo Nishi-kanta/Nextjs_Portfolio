@@ -74,7 +74,7 @@ export default function About() {
                   </a>
                   <div className="flex gap-4">
                     <a
-                      href="https://github.com/nishikanta01"
+                      href="https://github.com/Nishi-kanta"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition-colors duration-300"
@@ -82,7 +82,7 @@ export default function About() {
                       <FaGithub className="h-5 w-5" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/nishikanta-sahoo-aa"
+                      href="https://www.linkedin.com/in/nishikanta-sahoo-aaba0a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition-colors duration-300"
