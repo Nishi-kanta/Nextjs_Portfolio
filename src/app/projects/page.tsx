@@ -3,7 +3,47 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 import image1 from "../../../public/images/project/Food Ordering System.png"
+import image2 from "../../../public/images/project/E-Fitness.png"
+import image3 from "../../../public/images/project/voting-poll-idea.jpg"
+
+
 const projects = [
+  {
+    title: "Voting App",
+    description:
+      "A secure and transparent online voting system built with the MERN stack, allowing users to vote for candidates while ensuring one-time voting through Aadhaar verification. The app features real-time vote count updates and an admin panel for candidate management.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Tailwind CSS"],
+    image: image3,
+    github: "https://github.com/Nishi-kanta/Voting_App",
+    demo: "#",
+    features: [
+      "User authentication with Aadhaar card number and password",
+      "Sign-up and login system",
+      "List of candidates available for voting",
+      "One-time voting restriction per user",
+      "Live vote count updates, sorted by votes",
+      "Admin panel to manage candidates",
+      "Secure password change functionality",
+      "JWT-based authentication for security",
+      "Responsive UI with Tailwind CSS",
+    ],
+  },
+ 
+  {
+    title: "E-fitness",
+    description:
+      "The project incorporates a focus on user health tracking and editing, with features catering to user needs through HTML, CSS, and Bootstrap. The seamless interface provides a visually appealing and intuitive user experience.",
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    image: image2,
+    github: "https://github.com/Nishi-kanta/E-Fitness",
+    demo: "#",
+    features: [
+      "Personalized workout plans",
+      "Progress tracking dashboard",
+      "Nutrition calculator",
+      "Exercise library with demonstrations",
+    ],
+  },
   {
     title: "Online Food Ordering System",
     description:
@@ -17,7 +57,7 @@ const projects = [
       "jQuery",
     ],
     image: image1,
-    github: "https://github.com/nishikanta01/food-ordering",
+    github: "https://github.com/Nishi-kanta/Food_Ordering_System",
     demo: "#",
     features: [
       "User authentication and authorization",
@@ -25,37 +65,8 @@ const projects = [
       "Real-time order tracking",
       "Secure payment integration",
     ],
-  },
-  {
-    title: "E-fitness",
-    description:
-      "The project incorporates a focus on user health tracking and editing, with features catering to user needs through HTML, CSS, and Bootstrap. The seamless interface provides a visually appealing and intuitive user experience.",
-    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    image: image1,
-    github: "https://github.com/nishikanta01/e-fitness",
-    demo: "#",
-    features: [
-      "Personalized workout plans",
-      "Progress tracking dashboard",
-      "Nutrition calculator",
-      "Exercise library with demonstrations",
-    ],
-  },
-  {
-    title: "Dynamic CRUD Operation",
-    description:
-      "By integrating theme-specific functions such as artificial logging, credential tracking, and personalized recommendations, this project aims to promote healthier lifestyles among users.",
-    technologies: ["SQL Server", "ASP.NET MVC", "C#", "CSS"],
-    image: image1,
-    github: "https://github.com/nishikanta01/crud-app",
-    demo: "#",
-    features: [
-      "Real-time data synchronization",
-      "Advanced filtering and sorting",
-      "Data visualization dashboard",
-      "Audit logging system",
-    ],
-  },
+  }
+   
 ];
 
 export default function Projects() {
@@ -79,7 +90,7 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
 
