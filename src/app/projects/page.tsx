@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
-
+import image1 from "../../../public/images/project/Food Ordering System.png"
 const projects = [
   {
     title: "Online Food Ordering System",
@@ -16,7 +16,7 @@ const projects = [
       "Bootstrap",
       "jQuery",
     ],
-    image: "/projects/food-ordering.jpg",
+    image: image1,
     github: "https://github.com/nishikanta01/food-ordering",
     demo: "#",
     features: [
@@ -31,7 +31,7 @@ const projects = [
     description:
       "The project incorporates a focus on user health tracking and editing, with features catering to user needs through HTML, CSS, and Bootstrap. The seamless interface provides a visually appealing and intuitive user experience.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    image: "/projects/fitness.jpg",
+    image: image1,
     github: "https://github.com/nishikanta01/e-fitness",
     demo: "#",
     features: [
@@ -46,7 +46,7 @@ const projects = [
     description:
       "By integrating theme-specific functions such as artificial logging, credential tracking, and personalized recommendations, this project aims to promote healthier lifestyles among users.",
     technologies: ["SQL Server", "ASP.NET MVC", "C#", "CSS"],
-    image: "/projects/crud.jpg",
+    image: image1,
     github: "https://github.com/nishikanta01/crud-app",
     demo: "#",
     features: [

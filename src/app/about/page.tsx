@@ -12,6 +12,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import mine from "../../../public/images/mine.jpg"
 
 export default function About() {
   return (
@@ -28,7 +29,7 @@ export default function About() {
             <div className="lg:w-1/3">
               <div className="relative w-64 h-64 lg:w-80 lg:h-80 mx-auto group">
                 <Image
-                  src="/profile-pic.jpg"
+                  src={mine}
                   alt="Nishikanta Sahoo"
                   fill
                   className="rounded-2xl object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105"
@@ -108,7 +109,7 @@ export default function About() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-400">Email</p>
-                      <p className="text-base">nishikantasahoo2001@gmail.com</p>
+                      <p className="text-base">sahoonishikanta21@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 group">
@@ -153,7 +154,7 @@ export default function About() {
                   <div className="absolute w-4 h-4 bg-green-500 rounded-full -left-[9px] top-2"></div>
                   <div>
                     <h3 className="text-xl font-semibold">B.Tech (Regular)</h3>
-                    <p className="text-green-400">Engineering College</p>
+                    <p className="text-green-400">Raajdhani Engineering College</p>
                     <p className="text-gray-400">2020-2024</p>
                   </div>
                 </div>
@@ -164,7 +165,7 @@ export default function About() {
                     <h3 className="text-xl font-semibold">
                       Intermediate of Science
                     </h3>
-                    <p className="text-green-400">Satyabadi College</p>
+                    <p className="text-green-400">Saikrupa  Higher Secondary School DKL,Kunjakanta</p>
                     <p className="text-gray-400">2018-2020</p>
                   </div>
                 </div>
@@ -556,7 +557,7 @@ export default function About() {
                   >
                     <div className="absolute top-0 right-0 w-24 h-24 bg-green-500/5 rounded-full blur-2xl"></div>
                     <span className="text-4xl mb-4 block">{skill.icon}</span>
-                    <p className="text-sm group-hover:text-green-400 transition-colors duration-300">
+                    <p className="text-[11px] group-hover:text-green-400 transition-colors duration-300">
                       {skill.name}
                     </p>
                   </div>

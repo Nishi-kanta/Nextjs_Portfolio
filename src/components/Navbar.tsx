@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
-
+import logo from "../../public/images/logo.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Image
-                src="/profile-pic.jpg"
+                src={logo}
                 alt="Profile"
                 width={40}
                 height={40}
