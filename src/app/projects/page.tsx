@@ -90,7 +90,7 @@ export default function Projects() {
     src={project.image}
     alt={project.title}
     fill
-    className="object-contain w-full h-full"
+    className="object-scale-down w-full h-full"
   />
 </div>
 
