@@ -85,12 +85,12 @@ export default function Projects() {
             >
               <div className="flex flex-col lg:flex-row">
                 {/* Project Image */}
-              <div className="lg:w-1/2 h-full flex justify-center items-center relative">
+             <div className="lg:w-1/2 relative h-[300px] lg:h-auto flex justify-center items-center">
   <Image
     src={project.image}
     alt={project.title}
-    className="w-full h-full object-cover"
     fill
+    className="object-contain w-full h-full"
   />
 </div>
 
