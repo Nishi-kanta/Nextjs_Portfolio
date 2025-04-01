@@ -85,14 +85,15 @@ export default function Projects() {
             >
               <div className="flex flex-col lg:flex-row">
                 {/* Project Image */}
-                <div className="lg:w-1/2 relative h-[300px] lg:h-auto">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+               <div className="lg:w-1/2 relative h-[300px] lg:h-auto flex justify-center items-center">
+  <Image
+    src={project.image}
+    alt={project.title}
+    fill
+    className="object-cover w-full h-full"
+  />
+</div>
+
 
                 {/* Project Details */}
                 <div className="lg:w-1/2 p-8">
