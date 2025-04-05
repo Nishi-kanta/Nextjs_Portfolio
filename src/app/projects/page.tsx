@@ -5,9 +5,33 @@ import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 import image1 from "../../../public/images/project/Food Ordering System.png"
 import image2 from "../../../public/images/project/E-Fitness.png"
 import image3 from "../../../public/images/project/voting-poll-idea.jpg"
+import image4 from "../../../public/images/project/Gemail-generator with AI.png"
+
 
 
 const projects = [
+  {
+    title: "AI-Powered Gmail Generator",
+    description:
+      "An intelligent email assistant that leverages GeminAI API to generate professional, personalized Gmail content for users. Designed to enhance productivity and reduce the time spent drafting emails. Built using React, Node.js, and GeminAI API for seamless AI-driven user interaction.",
+    technologies: [
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "GeminAI API",
+      "Tailwind CSS",
+    ],
+    image: image4,
+    github: "https://github.com/Nishi-kanta/AI-Email-Generator", // Update if needed
+    demo: "#", // Add live demo URL if available
+    features: [
+      "AI-generated email drafts based on user input",
+      "Support for different email tones: formal, casual, etc.",
+      "Save, copy, and edit email drafts",
+      "Responsive UI with Tailwind CSS",
+      "History of generated emails stored for reuse"
+    ]
+  },  
   {
     title: "Voting App",
     description:
@@ -28,7 +52,7 @@ const projects = [
       "Responsive UI with Tailwind CSS",
     ],
   },
- 
+
   {
     title: "E-fitness",
     description:
@@ -66,7 +90,7 @@ const projects = [
       "Secure payment integration",
     ],
   }
-   
+
 ];
 
 export default function Projects() {
@@ -85,14 +109,14 @@ export default function Projects() {
             >
               <div className="flex flex-col lg:flex-row">
                 {/* Project Image */}
-          <div className="lg:w-1/2 relative h-[300px] lg:h-auto flex justify-center items-center">
-  <Image
-    src={project.image}
-    alt={project.title}
-    fill
-    className="object-contain w-full h-full"
-  />
-</div>
+                <div className="lg:w-1/2 relative h-[300px] lg:h-auto flex justify-center items-center">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-contain w-full h-full"
+                  />
+                </div>
 
 
 
