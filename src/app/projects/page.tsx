@@ -6,10 +6,39 @@ import image1 from "../../../public/images/project/Food Ordering System.png"
 import image2 from "../../../public/images/project/E-Fitness.png"
 import image3 from "../../../public/images/project/voting-poll-idea.jpg"
 import image4 from "../../../public/images/project/Gemail-generator with AI.png"
+import image5 from "../../../public/images/project/Task-Management-Application.webp"
+
 
 
 
 const projects = [
+  {
+    title: "AI-Powered Task Management Backend",
+    description:
+      "An intelligent backend system for task management enhanced with Gemini AI API integration. Provides role-based access control, task management features, and AI-generated task assistance. Built with Node.js, Express, MongoDB, and JWT authentication for secure user interactions and task management.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB (Mongoose)",
+      "Gemini AI API",
+      "JWT Authentication",
+      "Axios"
+    ],
+    image: image5,  // Replace with an actual image if available
+    github: "https://github.com/Nishi-kanta/AI-task-management",  // Add your GitHub repository link
+    demo: "#",  // Add live demo URL if available
+    features: [
+      "Role-based access control for Admin, Manager, and User roles",
+      "Users can manage only their assigned tasks",
+      "Admins & Managers can view, assign, update, and delete any task",
+      "AI-powered task suggestions using Gemini AI API",
+      "JWT-based authentication and authorization",
+      "Protected routes for task management and AI interaction",
+      "Robust error handling and data validation",
+      "Modular backend architecture"
+    ]
+  },
+  
   {
     title: "AI-Powered Gmail Generator",
     description:
@@ -111,7 +140,7 @@ export default function Projects() {
                 {/* Project Image */}
                 <div className="lg:w-1/2 relative h-[300px] lg:h-auto flex justify-center items-center">
                   <Image
-                    src={project.image}
+                    src={project?.image || ""}
                     alt={project.title}
                     fill
                     className="object-contain w-full h-full"
@@ -172,7 +201,7 @@ export default function Projects() {
                       <FaGithub className="h-5 w-5" />
                       <span>View Code</span>
                     </a>
-                    <a
+                    {/* <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -180,7 +209,7 @@ export default function Projects() {
                     >
                       <FaExternalLinkAlt className="h-4 w-4" />
                       <span>Live Demo</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

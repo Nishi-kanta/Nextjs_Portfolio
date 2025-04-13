@@ -60,12 +60,12 @@ export default function Skills() {
             <div>
               <div className="flex justify-between mb-2">
                 <span>MERN Stack</span>
-                <span>85%</span>
+                <span>90%</span>
               </div>
               <div className="w-full bg-gray-600 rounded-full h-2.5">
                 <div
                   className="bg-green-500 h-2.5 rounded-full"
-                  style={{ width: "85%" }}
+                  style={{ width: "90%" }}
                 ></div>
               </div>
             </div>

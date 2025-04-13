@@ -447,7 +447,7 @@ export default function About() {
                       { name: "Express.js", level: 85, icon: "🚀" },
                       { name: "MongoDB", level: 80, icon: "🍃" },
                       { name: "REST API", level: 85, icon: "🔌" },
-                      { name: "Git/GitHub", level: 90, icon: "📚" },
+                      { name: "SQL", level: 90, icon: "🛢️" },
                       { name: "PostgreSQL", level: 75, icon: "🐘" },
                     ].map((skill) => (
                       <div key={skill.name} className="group">
